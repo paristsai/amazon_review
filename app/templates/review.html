@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordcount</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col-sm-4 col-sm-offset-2">
+      <h1>Review </h1>
+      <form role="form" method='POST' action='/review'>
+        <div class="form-group">
+          <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter URL..." style="max-width: 300px;" autofocus required>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <br>
+      {% for error in errors %}
+        <h4>{{ error }}</h4>
+      {% endfor %}
+    </div>
+    <div class="col-sm-5">
+      {% if results %}
+        <h2>Summary</h2>
+        <br>
+        <div id="results">
+          <table class="table table-striped" style="max-width: 300px;">
+            <thead>
+              <tr>
+                <th>Verified Purchase</th>
+                <th>Total Number</th>
+                <th>Percentage</th>
+                <th>Average Rate</th>
+              </tr>
+            </thead>
+            {% for result in results%}
+              <tr>
+                <td>{{ result[0] }}</td>
+                <td>{{ result[1][0] }}</td>
+                <td>{{ result[1][1] }}</td>
+                <td>{{ result[1][2] }}</td>
+              </tr>
+            {% endfor %}
+          </table>
+      {% endif %}
+
+        </div>
+    </div>
+    <div>
+        <!--<div id="container" style="min-width:310px;height:400px;margin:0 auto"></div>-->
+        <div id="chart1_ID" class="chart" style="height: 100px; width: 500px"></div>
+    </div>
+    <div>
+        <div id="chart2_ID" class="chart col-sm-5" style="height: 400px; min-width: 310px; margin-left: 700px"></div>
+    </div>
+    <br><br>
+    <script>
+        var api_type = {{ api_type|safe }}
+        var chart_id = {{ chartID|safe }}
+        var series = {{ series|safe }}
+        var title = {{ title|safe }}
+        var xAxis = {{ xAxis|safe }}
+        var yAxis = {{ yAxis|safe }}
+        var chart = {{ chart|safe }}
+    </script>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../static/js/main.js"></script>
+  </body>
+</html>
