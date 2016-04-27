@@ -17,7 +17,7 @@
   ![alt tag](https://dl.dropboxusercontent.com/u/49401941/amazon_verified.png)
   
   * 沒有標籤的評論
-  ![alt tag](https://dl.dropboxusercontent.com/u/49401941/amazon_unverified.png)
+  ![alt tag](https://dl.dropboxusercontent.com/u/49401941/%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%202016-04-27%2023.33.18.png)
 
 
 ## 專案目的
