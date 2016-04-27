@@ -19,3 +19,9 @@
 1. 讓消費者透過更透明的評價分析，知道哪些商品值得購買
 2. 讓商家了解 Top 100 的商品頁有什麼特色可以學習
 3. 提供 Amazon 一些建議讓這個平台變得更好
+
+
+
+
+![alt tag](https://dl.dropboxusercontent.com/u/49401941/amazon_project_record2.gif)
+
