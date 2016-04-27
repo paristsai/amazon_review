@@ -28,12 +28,19 @@
   3. 提供 Amazon 一些建議讓這個平台變得更好
 
 ## 專案內容
-#### 消費者：
 * Project 1: 進階評價查詢服務
   * 收集商品資料
-    為了避免爬資料時被 Amazon 鎖 IP，一開始先在 Google App Engine 建立數個抓取網頁 html 的代理伺服器，再從本地端隨機透過代理伺服器抓取網頁資料，存入 SQLite 資料庫。
+    為了避免爬資料時被 Amazon 鎖 IP，一開始先在 Google App Engine 建立數個抓取網頁 html 的代理伺服器，再從本地端透過隨機睡眠與隨機選取代理伺服器的策略提高抓取網頁的成功率，並且存入 SQLite 資料庫。另外如果在抓網頁時還是被擋會把沒有成功擷取網頁的網址記錄下來，方便之後重新再爬。
   * 建立查詢 App
     透過 Flask 框架建立輕量 App，透過商品 id 在 SQLite 資料庫查詢，將查詢的結果結合 HighCharts 製作互動圖表呈現在頁面上。頁面包含有/沒有 Verified Purchase 評論的數量、比例、平均評分與評論關鍵字，並且將評論以時間序列的方式呈現，作為消費者判斷近期商品品質的依據。
   * DEMO
   ![alt tag](https://dl.dropboxusercontent.com/u/49401941/amazon_project_record2.gif)
+* Project 2: 商品資料與商品評論摘要與分析
+  
+  透過 iPython 結合 Numpy, Pandas, Seaborn, Sklearn 等套件針對抓到的資料進行摘要與分析，試圖回答以下問題：
+    * 藍牙耳機的平均價格落在哪裡？平均折扣是多少？
+    * 知名大廠的耳機評價和其他小廠商的評價有什麼不同？
+    * Best Seller Rank 越高的耳機評價越好？
+    * 商品敘述越詳細越能得到消費者青睞嗎？
+    * 哪些專業評論人最誠實？哪些評論人的評價很沒有效力？
 
