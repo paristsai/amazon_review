@@ -23,12 +23,17 @@
 ## 專案目的
 根據以上發現的痛點，分別從消費者、商家、以及 Amazon 的角度思考並且設定目標：
 
-1. 讓消費者透過更透明的評價分析，知道哪些商品值得購買
-2. 讓商家了解 Top 100 的商品頁有什麼特色可以學習
-3. 提供 Amazon 一些建議讓這個平台變得更好
+  1. 讓消費者透過更透明的評價分析，知道哪些商品值得購買
+  2. 讓商家了解 Top 100 的商品頁有什麼特色可以學習
+  3. 提供 Amazon 一些建議讓這個平台變得更好
 
-
-
-## DEMO
-![alt tag](https://dl.dropboxusercontent.com/u/49401941/amazon_project_record2.gif)
+## 專案內容
+#### 消費者：
+* Project 1: 進階評價查詢服務
+  * 收集商品資料
+    為了避免爬資料時被 Amazon 鎖 IP，一開始先在 Google App Engine 建立數個抓取網頁 html 的代理伺服器，再從本地端隨機透過代理伺服器抓取網頁資料，存入 SQLite 資料庫。
+  * 建立查詢 App
+    透過 Flask 框架建立輕量 App，透過商品 id 在 SQLite 資料庫查詢，將查詢的結果結合 HighCharts 製作互動圖表呈現在頁面上。頁面包含有/沒有 Verified Purchase 評論的數量、比例、平均評分與評論關鍵字，並且將評論以時間序列的方式呈現，作為消費者判斷近期商品品質的依據。
+  * DEMO
+  ![alt tag](https://dl.dropboxusercontent.com/u/49401941/amazon_project_record2.gif)
 
