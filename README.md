@@ -58,4 +58,4 @@
   3. 哪些專業評論人最誠實？哪些評論人的評價很沒有效力？
   4. 對評論者進行分析，評論次數>5的人是到底是網路寫手還是單純為忠誠度很高的顧客呢？
 
-有什麼想知道的事情或是建議都歡迎與我聯繫！[parisswing@gmail.com](paristsaiswing@gmail.com)
+有什麼想知道的事情或是建議都歡迎與我聯繫！[paristsaiswing@gmail.com](paristsaiswing@gmail.com)
