@@ -61,4 +61,4 @@
 
 ---
 有什麼建議或是需要其他資訊都歡迎與我聯繫！
-> Paris Tsai [paristsaiswing@gmail.com](mailto:paristsaiswing@gmail.com)
+> **Paris Tsai**  [paristsaiswing@gmail.com](mailto:paristsaiswing@gmail.com)
