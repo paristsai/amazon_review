@@ -14,10 +14,10 @@
   現代人網路購物比例越來越高，舉凡電子商品、民生用品到蔬菜水果什麼都賣什麼都不奇怪，但是也因為摸不到實品，讓人的顧慮有所增加。評價機制是網路購物不可或缺的關鍵因素，它建立起電商與消費者之間信賴的橋樑。大電商如露天、淘寶有評價造假的問題，小電商評價數量偏少，這些現象都使得我們進行網路購物時經常踩雷，Amazon 的評價機制已經算是不錯了，但是依然有進步的空間，這會在 Project2 中進一步說明。
   
   * 有標籤的評論 (請注意紅色 "Verified Purchase")
-  ![alt tag](https://www.dropbox.com/s/z29iekzu13yizxi/amazon_verified.png?dl=0)
+  ![alt tag](http://i.imgur.com/Z1EDE28.png)
   
   * 沒有標籤的評論
-  ![alt tag](https://www.dropbox.com/s/qp5rf1r1200znem/amazon_unverified.png?dl=0)
+  ![alt tag](http://i.imgur.com/XUNat4J.png)
 
 
 ## 專案目的
@@ -34,7 +34,7 @@
   * 建立查詢 App
     透過 Flask 框架建立輕量 App，輸入商品編號就會到 SQLite 資料庫查詢，將查詢的結果結合 HighCharts 製作互動圖表呈現在頁面上。頁面包含有/沒有 Verified Purchase 評論的數量、比例、平均評分與評論關鍵字，並且將評論以時間序列的方式呈現，作為消費者判斷近期商品品質的依據。
   * DEMO
-  ![alt tag](https://www.dropbox.com/s/784fkee80836zm3/amazon_project_record2.gif)
+  ![alt tag](http://i.imgur.com/tFz3R72.gif)
 * Project 2: 商品資料與商品評論摘要與分析              
 分析過程與結果都放在 Jupyter Notebook  [請點我](http://nbviewer.jupyter.org/github/paristsai/amazon_review/blob/master/analysis/amazon-review.ipynb "Title")
   
