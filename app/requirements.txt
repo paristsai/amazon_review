@@ -18,7 +18,7 @@ fancycompleter==0.4
 Flask==0.10.1
 Flask-SQLAlchemy==2.1
 gnureadline==6.3.3
-gunicorn==19.4.5
+gunicorn==19.5.0
 html5lib==0.999
 ipython==4.1.1
 ipython-genutils==0.1.0
@@ -41,7 +41,7 @@ path.py==8.1.2
 pdbpp==0.7.2
 pexpect==4.0.1
 pickleshare==0.6
-Pillow==2.6.1
+Pillow==3.3.2
 ptyprocess==0.5.1
 py2app==0.7.3
 Pygments==1.6
@@ -80,7 +80,7 @@ pyobjc-framework-Social==2.5.1
 pyobjc-framework-SyncServices==2.5.1
 pyobjc-framework-SystemConfiguration==2.5.1
 pyobjc-framework-WebKit==2.5.1
-pyOpenSSL==0.13.1
+pyopenssl==17.5.0
 pyparsing==2.0.1
 pyquery==1.2.11
 pyrepl==0.8.4
@@ -88,7 +88,7 @@ python-dateutil==1.5
 pytz==2013.7
 PyYAML==3.11
 pyzmq==15.0.0
-requests==2.4.3
+requests==2.20.0
 schema==0.3.1
 scikit-learn==0.15.1
 scipy==0.13.0b1
